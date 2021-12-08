@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Ruby's Struct"
+date:   2021-12-08 22:26:12 +0700
+categories: code ruby oop
+---
+
+### What does Ruby's struct library do?
+Struct can help you create a class quickly.<br />
+The class can be instantiated, have getter and setter methods.<br />
+The class can also be given a block to add more methods.
+
+```
+  class Cat
+    attr_accessor :name
+    
+    def initialize(name=nil)
+      @name = name
+    end
+  end
+```
+is equivalent to
+`Cat = Struct.new(:name)`
+
+
